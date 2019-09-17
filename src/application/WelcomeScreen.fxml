@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.componenthandlers.WelcomeScreenHandler">
+   <children>
+      <ComboBox fx:id="minimumPriceSelector" layoutX="327.0" layoutY="14.0" onAction="#selectMinimumPrice" prefWidth="150.0" promptText="-" />
+      <ComboBox fx:id="maximumPriceSelector" layoutX="508.0" layoutY="14.0" onAction="#selectMaximumPrice" prefWidth="150.0" promptText="-" />
+      <Button fx:id="nextButton" layoutX="594.0" layoutY="277.0" mnemonicParsing="false" onAction="#next" prefHeight="27.0" prefWidth="64.0" text="&gt;" />
+      <Label layoutX="289.0" layoutY="19.0" text="From" />
+      <Label layoutX="485.0" layoutY="19.0" text="To" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="277.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="64.0" text="&lt;" />
+      <Label layoutX="14.0" layoutY="48.0" prefHeight="72.0" prefWidth="637.0" text="Welcome, this software will help find a property best suited for you! To begin, select a price range to view the properties within your budget. Once you have selected the price ranges, use the buttons below to go through the screens to help you choose the property right for you." wrapText="true" />
+      <Label layoutX="14.0" layoutY="19.0" prefHeight="17.0" prefWidth="268.0" text="Select your desired price range from here." />
+      <ImageView fitHeight="190.0" fitWidth="429.0" layoutX="200.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/airbnblogo.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

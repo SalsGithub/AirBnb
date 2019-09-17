@@ -1,0 +1,123 @@
+/**
+ * Applies to the entire software, that the background is white.
+ */
+.root {
+	-fx-background-color: #fff; 
+}
+
+/**
+ * Applies to all buttons, the text colour is white.
+ * The background colour is a shade of light blue.
+ * The cursor ontop of the button will be the shape of a hand.
+ */
+.button {
+	-fx-text-fill: #fff;
+	-fx-background-color: #0079FA; 
+	-fx-cursor: hand;
+}
+
+/**
+ * Applies to hovering on all buttons, the background colour is a lighter shade of blue.
+ */
+.button:hover {
+	-fx-background-color: #218DFF; 
+}  
+
+/**
+ * Every Label will have the text colour in black.
+ */
+.label {
+	-fx-text-fill: #000;
+}
+
+/**
+ * Applies to all combo-boxes, the faint focus colour is transparent.
+ * The focus colour is the same has the button hover colour.
+ */
+.combo-box {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #0079FA;
+}
+
+/**
+ * Applies to all combo-boxes hovering over an item in the list.
+ * The background colour is the same as the button hover colour.
+ */
+.combo-box-popup .list-view .list-cell:hover {
+	-fx-background-color: #0079FA;
+}
+
+/**
+ * Applies to all combo-boxes selected items in the list.
+ * The background colour is the same as the button hover colour.
+ */ 
+.combo-box-popup .list-view .list-cell:selected {
+	-fx-background-color: #0079FA;
+}
+
+/**
+ * The text area has transparent faint focus and focus colour.
+ */
+.text-area { 
+	-fx-faint-focus-color: transparent; 
+	-fx-focus-color: #0079FA;
+} 
+
+/**
+ * Colour the content of the text area white.
+ * This removes the weird shade of gray at the top part of the text area.
+ */
+.text-area .content {
+    -fx-background-color: #fff;
+}
+
+/**
+ * Applies to all table view, the faint focus colour is transparent.
+ * The focus colour is the same as the button hover colour.
+ */
+.table-view {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #0079FA;
+	-fx-selection-bar: #0079FA;
+	-fx-selection-bar-non-focused: #0079FA;
+}
+
+/**
+ * Applies to all table view row items. 
+ * The background colour will be white.
+ */
+.table-view .table-row-cell {
+	-fx-background-color: #fff;
+}
+
+/**
+ * Applies to all the table view rows which get selected.
+ * The texdt colour will be white, the background colour will be the same as the button hover colour.
+ */
+.table-view .table-row-cell:selected {
+	-fx-text-fill: #fff;
+	-fx-background-color: #0079FA;
+}
+
+#bok {
+	-fx-background-color: #D63184;
+	-fx-text-fill: #fff;
+}
+
+/**
+ * Applies to all check boxes, the faint focus colour is transparent.
+ * The focus colour is the same as the button hover colour.
+ */
+.check-box {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #0079FA;
+}
+
+/**
+ * Applies to all spinners, the faint cous colour is transparent.
+ * The focus colour is the same as the button hover colour.
+ */
+.spinner {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #0079FA;
+}

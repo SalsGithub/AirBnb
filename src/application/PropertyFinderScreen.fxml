@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.componenthandlers.PropertyFinderComponentHandler">
+   <children>
+      <ComboBox fx:id="occasionSelection" layoutX="166.0" layoutY="60.0" prefHeight="27.0" prefWidth="177.0" promptText="-" />
+      <Label layoutX="14.0" layoutY="64.0" prefHeight="17.0" prefWidth="145.0" text="Occasion for Renting">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="100.0" prefHeight="34.0" prefWidth="133.0" text="Number of People Staying" wrapText="true" />
+      <Label layoutX="14.0" layoutY="143.0" prefHeight="34.0" prefWidth="145.0" text="Minimum nights you are willing to stay" wrapText="true" />
+      <CheckBox fx:id="nearTube" layoutX="14.0" layoutY="238.0" mnemonicParsing="false" text="Near Tube" />
+      <CheckBox fx:id="noSmoking" layoutX="126.0" layoutY="237.0" mnemonicParsing="false" text="No Smoking" />
+      <Label layoutX="14.0" layoutY="174.0" prefHeight="61.0" prefWidth="329.0" text="Below are some features that will help narrow down and cater the results to a property that suits you. If ticked, they will be considered in the result. The options below are not required, however will help find the best suited property for you." wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <CheckBox fx:id="petsAllowed" layoutX="240.0" layoutY="238.0" mnemonicParsing="false" text="Pets Allowed" />
+      <CheckBox fx:id="balcony" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" text="Balcony" />
+      <TableView fx:id="results" layoutX="353.0" layoutY="21.0" onMouseClicked="#onPropertySelected" prefHeight="317.0" prefWidth="470.0">
+        <columns>
+          <TableColumn fx:id="priceColumn" prefWidth="69.0" text="Price" />
+          <TableColumn fx:id="boroughColumn" prefWidth="81.0" text="Borough" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="319.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchButton" layoutX="137.0" layoutY="412.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="207.0" text="Search" />
+      <CheckBox fx:id="garden" layoutX="126.0" layoutY="269.0" mnemonicParsing="false" text="Garden" />
+      <CheckBox fx:id="niceViews" layoutX="240.0" layoutY="269.0" mnemonicParsing="false" text="Nice Views" />
+      <TextArea fx:id="phrases" layoutX="6.0" layoutY="321.0" onKeyTyped="#onPhraseType" prefHeight="68.0" prefWidth="337.0" promptText="E.g Double room, spacious." wrapText="true" />
+      <Label layoutX="11.0" layoutY="290.0" prefHeight="34.0" prefWidth="318.0" text="Add keywords/phrases for things you would look for in a rental property, these are of course optional. Seperate each phrase/word with a comma." wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="53.0" prefWidth="329.0" text="Fill out the section below to help find a property best suited for you. If you want to change your price range, proceed back to the first page to do so as this takes into account the price range from the first page." wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="6.0" layoutY="412.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="125.0" text="&lt;" />
+            <Spinner fx:id="numberOfPeopleSpinner" editable="true" layoutX="166.0" layoutY="104.0" prefHeight="27.0" prefWidth="177.0">
+      <valueFactory>
+        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="1" />
+      </valueFactory>
+    </Spinner>
+      <Spinner fx:id="minimumNightsStaySpinner" editable="true" layoutX="166.0" layoutY="146.0" prefHeight="27.0" prefWidth="177.0">
+      <valueFactory>
+        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" /> 
+      </valueFactory> 
+      </Spinner>
+      <Label fx:id="resultsLabel" layoutX="353.0" layoutY="377.0" prefHeight="61.0" prefWidth="470.0" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sortSelection" layoutX="395.0" layoutY="343.0" onAction="#sort" prefHeight="27.0" prefWidth="193.0" promptText="-" />
+      <Label fx:id="sortLabel" layoutX="352.0" layoutY="349.0" prefHeight="17.0" prefWidth="37.0" text="Sort :" />
+      <Label fx:id="charactersLeftLabel" layoutX="8.0" layoutY="390.0" prefHeight="17.0" prefWidth="329.0" text="Characters left : 150" />
+      <Label layoutX="148.0" layoutY="64.0" style="-fx-text-fill: #ff0000;" text="*" />
+      <Label layoutX="148.0" layoutY="143.0" style="-fx-text-fill: #ff0000;" text="*" />
+      <Label fx:id="listingLabel" layoutX="599.0" layoutY="341.0" prefHeight="34.0" prefWidth="223.0" text="Click on a listing in the table to view more details about that property." wrapText="true" />
+      <Label fx:id="highlightLabel" layoutX="353.0" layoutY="2.0" prefHeight="18.0" prefWidth="470.0" text="Recommended properties are highlighted with a bright colour. You may need to scroll down to see them." wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label> 
+   </children>     
+</AnchorPane>

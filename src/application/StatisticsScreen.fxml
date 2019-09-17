@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="393.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.componenthandlers.StatisticsScreenHandler">
+   <children>
+      <Pane layoutY="36.0" prefHeight="165.0" prefWidth="291.0" style="-fx-background-color: #fff;">
+         <children> 
+            <Label fx:id="statTitle1" layoutX="95.0" layoutY="6.0" prefHeight="17.0" prefWidth="156.0" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Button fx:id="prevStat1" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&lt;" />
+            <Button fx:id="nextStat1" layoutX="260.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&gt;" />
+            <Label fx:id="statLabel1" layoutX="37.0" layoutY="27.0" prefHeight="128.0" prefWidth="216.0" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children></Pane> 
+      <Pane layoutX="290.0" layoutY="36.0" prefHeight="165.0" prefWidth="291.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="statTitle2" layoutX="69.0" layoutY="6.0" prefHeight="17.0" prefWidth="186.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Button fx:id="nextStat2" layoutX="260.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&gt;" />
+            <Button fx:id="prevStat2" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&lt;" />
+            <Label fx:id="statLabel2" layoutX="35.0" layoutY="23.0" prefHeight="128.0" prefWidth="222.0" wrapText="true">
+               <font>
+                  <Font size="12.0" />   
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="290.0" layoutY="195.0" prefHeight="165.0" prefWidth="291.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="statTitle4" layoutX="93.0" layoutY="6.0" prefHeight="17.0" prefWidth="164.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Button fx:id="prevStat4" layoutX="5.0" layoutY="9.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&lt;" />
+            <Button fx:id="nextStat4" layoutX="260.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&gt;" />
+            <Label fx:id="statLabel4" layoutX="35.0" layoutY="23.0" prefHeight="128.0" prefWidth="222.0" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutY="197.0" prefHeight="165.0" prefWidth="291.0" style="-fx-background-color: #fff;">
+         <children>
+            <Button fx:id="prevStat3" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&lt;" />
+            <Button fx:id="nextStat3" layoutX="260.0" layoutY="7.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="25.0" text="&gt;" />
+            <Label fx:id="statLabel3" layoutX="37.0" layoutY="31.0" prefHeight="120.0" prefWidth="216.0" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="statTitle3" layoutX="72.0" layoutY="6.0" prefHeight="17.0" prefWidth="186.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+         </children></Pane>
+      <Button layoutX="3.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="64.0" text="&lt;" />
+      <Button layoutX="517.0" layoutY="361.0" mnemonicParsing="false" onAction="#next" prefHeight="27.0" prefWidth="64.0" text="&gt;" />
+      <Label layoutX="67.0" layoutY="14.0" prefHeight="17.0" prefWidth="491.0" text="Below are four panels containing various satistics about the properties based on your given price range.">
+         <font>
+            <Font size="10.0" />
+         </font></Label> 
+   </children> 
+</AnchorPane>

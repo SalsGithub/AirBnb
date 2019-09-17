@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="669.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.componenthandlers.BoroughInfoScreenHandler">
+   <children>
+      <Button fx:id="closeButton" layoutX="598.0" layoutY="337.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="63.0" text="Close" />
+      <ComboBox fx:id="sortOption" layoutX="63.0" layoutY="337.0" onAction="#sort" prefHeight="27.0" prefWidth="206.0" promptText="-" />
+      <Label layoutX="7.0" layoutY="342.0" text="Sort By:" />
+      <TableView fx:id="boroughInfo" layoutX="7.0" layoutY="27.0" onMouseClicked="#onPropertySelected" prefHeight="303.0" prefWidth="654.0">
+        <columns>
+          <TableColumn fx:id="hostNameColumn" prefWidth="177.0" resizable="false" text="Host Name" />
+          <TableColumn fx:id="priceColumn" prefWidth="106.0" resizable="false" text="Price" />
+            <TableColumn fx:id="numberOfReviewsColumn" prefWidth="182.0" resizable="false" text="Number of Reviews" />
+            <TableColumn fx:id="minimumNightsColumn" prefWidth="187.0" resizable="false" text="Minimum Nights" />
+        </columns> 
+      </TableView>
+      <Label fx:id="numberOfPropertiesLabel" layoutX="7.0" layoutY="12.0" prefHeight="11.0" prefWidth="324.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="cheapestPriceLabel" layoutX="335.0" layoutY="12.0" prefHeight="13.0" prefWidth="150.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="dearestPriceLabel" layoutX="494.0" layoutY="12.0" prefHeight="13.0" prefWidth="168.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label layoutX="280.0" layoutY="333.0" prefHeight="34.0" prefWidth="309.0" text="Click on a property in the list to view more details about it." wrapText="true" />
+   </children>      
+</AnchorPane>

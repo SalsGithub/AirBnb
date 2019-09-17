@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.componenthandlers.SinglePropertyScreenHandler">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutX="5.0" layoutY="37.0" prefHeight="130.0" prefWidth="440.0" wrapText="true" />
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/house.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="neighbourhoodLabel" layoutX="38.0" layoutY="19.0" prefHeight="17.0" prefWidth="186.0" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="hostNameLabel" layoutX="268.0" layoutY="18.0" prefHeight="17.0" prefWidth="174.0" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="5.0" layoutY="171.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="440.0" text="Close" />
+      <Label fx:id="propertyIdLabel" layoutX="38.0" layoutY="3.0" prefHeight="17.0" prefWidth="398.0" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+   </children>  
+</AnchorPane> 
